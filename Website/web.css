@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: orange;
+
+}
+.middle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    
+.topnav {
+      overflow: hidden;
+      background-color: #FFA500;
+}
+    
+.topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 20px 16px;
+}
+    
+.header {
+        padding: 10px;
+        text-align: center;
+      background: #FFFFFF;
+      color: white;
+}
+
+.center {
+    text-align: center;
+    border: 1px solid #FFA500;
+}
+
+#border-img1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    background: #000000;
+    text-align: center;
+}
+
+.img-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.intro{
+    text-align: center;
+    border: 107px solid #FFD580;
+    
+
+}
+
+.intro h1 {
+color: white;
+}
+.container {
+    width: 800px;
+    margin: 10px auto 0;
+    display: table;
+    box-sizing: border-box;
+    padding: 50px 0 50px 0;
+}
+.row {
+    margin: 20px 0;
+    transition: 1.1s;
+
+
+}
+
+.column a {
+    margin: 0;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 8px;
+
+}
+
+.column {
+    background: #ccc;
+    border-radius: 20px;
+    display: table-cell;
+    padding: 10px;
+    width: 33.33333%;
+    color: #fff;
+    vertical-align: middle;
+    border-left: 3px transparent orange;
+    border-right: 3px solid orange;
+}
+.column:hover {
+    transform: scale(1.3);
+
+}
+h4:hover {     
+    transform: scale(1.03);
+    box-shadow: 5px  rgba(0,0,0,0.6);
+
+}
+.row:nth-child(1) .column:nth-child(1) {
+    background: #596270;
+}
+.row:nth-child(1) .column:nth-child(2) {
+    background: #cf6768;
+}
+.row:nth-child(1) .column:nth-child(3) {
+    background: #8accc3;
+}
+.row:nth-child(2) .column:nth-child(1) {
+    background: #00acc1;
+}
+.row:nth-child(2) .column:nth-child(2) {
+    background: #ff4350;
+}
+.row:nth-child(2) .column:nth-child(3) {
+    background: #72768a;
+}
+@media (max-width: 800px) {
+    .container {
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+    .column {
+        width: 100%;
+        display: block;
+        margin: 10px 0;
+        border: none;
+        box-sizing: border-box;
+    }
+    .row {
+        margin: 0;
+    }
+}
+
+
+
+
+.footer {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    color: #999;
+    font-size: .9rem;
+}
