@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Program Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 id="title">Program Survey</h1>
+      <p id="description">Please fill out this form with the required information</p>
+    </header>
+
+    <!-- Form  -->
+    <form id="survey-form" method="post" action="”mailto:example@gmail.com">
+      <div class="form-group">
+
+      <label id="name-label">Full Name <input id="name" name="name" type="text" placeholder="Jim Brown" required></input></label>
+
+      <label id="email-label">Email <input id="email" name="email" type="email"  placeholder="Jim@example.com" required> </input></label>
+
+      <label id="number-label">Age <input id="number" name="age" type="number" min="13" max="99" placeholder="35" required> </input></label>
+
+      </div>
+
+      <!-- Radio Dropdown  -->
+      <div class="form-group">
+        <p>
+          Which option best describes your current role?
+        </p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <!-- Radio Input DMN -->
+      <div class="form-group">
+        <p>Would you recommend family and friends to become programmers?
+        </p>
+        <label><input   type="radio" name="DMN" class="inline" value="D">Definitely</input></label>
+
+        <label><input  type="radio" name="DMN" class="inline" value="M">Maybe</input></label>
+        
+        <label><input type="radio" name="DMN" class="inline" value="N">Not sure</input></label>
+      </div>
+      <!-- Radio Checkboxes  -->
+      <div class="form-group">
+        <p>
+           What Kind of programmer are you? (Check all that apply)
+        </p>
+        <label><input name="prefer" value="front-end-developer" type="checkbox" class="input-checkbox"> Front End Developer</input></label>
+        <label><input name="prefer" value="Back End Developer" type="checkbox" class="input-checkbox"> Back End Developer</input></label>
+        
+        <label><input name="prefer" value="Full Stack Developer" type="checkbox" class="input-checkbox"> Full Stack Developer</input></label>
+        
+        <label><input name="prefer" value="Web Developer" type="checkbox" class="input-checkbox"> Web Developer</input></label>
+        
+        <label><input name="prefer" value="Mobile Developer" type="checkbox" class="input-checkbox"> Mobile Developer</input></label>
+        
+        <label><input name="prefer" value="Game Programmer" type="checkbox" class="input-checkbox"> Game Programmer</input></label>
+        
+        <label><input name="prefer" value="Database Developer" type="checkbox" class="input-checkbox"> Database Developer</input></label>
+        
+        <label><input name="prefer" value="Analyst Programmer" type="checkbox" class="input-checkbox"> Analyst Programmer</input></label>
+        
+        <label><input name="prefer" value="Hardware programmer" type="checkbox" class="input-checkbox"> Hardware programmer</input></label>
+        
+        <label><input name="prefer" value="Network system administrator" type="checkbox" class="input-checkbox"> Network system administrator</input></label>
+      </div>
+
+      <!-- textarea -->
+      <div class="form-group">
+        <p>Feel free to comment about your field of study.</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your commment here..."></textarea>
+      </div>
+        
+      <!-- Submit -->
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button" value="submit">Submit</button>
+      </div>
+
+    </form>
+  </body>
+</html>
